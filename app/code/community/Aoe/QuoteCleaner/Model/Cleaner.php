@@ -19,7 +19,7 @@ class Aoe_QuoteCleaner_Model_Cleaner
      */
     public function clean()
     {
-        $report = [];
+        $report = array();
 
         $limit = intval(Mage::getStoreConfig('system/quotecleaner/limit'));
         $limit = min($limit, 50000);
