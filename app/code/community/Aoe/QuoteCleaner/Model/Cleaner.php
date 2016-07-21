@@ -53,10 +53,10 @@ class Aoe_QuoteCleaner_Model_Cleaner
         $report['customer']['duration'] = time() - $startTime;
         if ($report['customer']['count'] > 0) {
             Mage::log(sprintf(
-                '[QUOTECLEANER] Cleaning old customer quotes (duration: %d, row count: %d)'),
+                '[QUOTECLEANER] Cleaning old customer quotes (duration: %d, row count: %d)',
                 $report['customer']['duration'],
                 $report['customer']['count']
-            );
+            ));
         }
 
         // anonymous quotes$startTime = time();
@@ -75,10 +75,10 @@ class Aoe_QuoteCleaner_Model_Cleaner
         $report['anonymous']['duration'] = time() - $startTime;
         if ($report['customer']['count'] > 0) {
             Mage::log(sprintf(
-                '[QUOTECLEANER] Cleaning old anonymous quotes (duration: %d, row count: %d)'),
+                '[QUOTECLEANER] Cleaning old anonymous quotes (duration: %d, row count: %d)',
                 $report['anonymous']['duration'],
                 $report['anonymous']['count']
-            );
+            ));
         }
 
         return $report;
